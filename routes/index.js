@@ -3,7 +3,6 @@ var router = express.Router()
 var Chart = require('../controllers/chart')
 var Score = require('../controllers/score')
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Scrabble Scoring!' })
 })

@@ -12,6 +12,8 @@ var ScoreController = {
   },
 
   getScore: function (request, response) {
+    // so this is weird but it works.
+    // couldn't figure out how to get dynamic route to work in the actual route
     var word = request.body.word || request.params.word
     var locals = {}
     var title = "Score a Word!"
