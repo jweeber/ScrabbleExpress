@@ -1,8 +1,20 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+ font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header.index {
+  text-align: center;
+  margin-top: 20%;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  margin-right: 4%;
+  font-size: 20px;
+  display: inline;
 }

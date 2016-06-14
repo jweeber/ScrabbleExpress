@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header>
+      <h1>Scrabble Scoring Chart!</h1>
+    </header>
+    <table>
+      <th>LETTER</th>
+      <th>POINTS</th>
+      <tr><% for (var letter of letters) { %> 
+      <td><%= letter %> </td></tr>
+      <% } %>
+      <tr>
+      <% for (var letter in scoring) { %>
+      <td><%= scoring[letter] %></td></tr>
+
+      <% } %>
+    </table>
+    <%= bonus %>
+ 
+  </body>
+</html>

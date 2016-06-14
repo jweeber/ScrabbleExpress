@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <header><%= title %></header>
+    <form method="post" action="/score">
+      <input type="text" name="word">
+      <input type="submit" value="Submit">
+    </form>
+    <%= locals.word %>
+    <%= locals.points %>
+    <%= locals.badRequest %>
+  </body>
+</html>
