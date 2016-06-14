@@ -12,14 +12,13 @@ var ScoreController = {
   },
 
   getScore: function (request, response) {
-    var word = request.body.word
+    var word = request.body.word || request.params.word
     var locals = {}
     var title = "Score a Word!"
     var points = scrabble.score(word)
 
     locals.title = title
     locals.points = points
-    locals.word = word
 
     response.render('score', locals)
   }
