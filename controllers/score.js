@@ -20,6 +20,7 @@ var ScoreController = {
     var points = scrabble.score(word)
 
     locals.title = title
+    locals.word = word
     locals.points = points
 
     response.render('score', locals)

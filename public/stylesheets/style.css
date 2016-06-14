@@ -4,12 +4,28 @@ body {
 
 header.index {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
+}
+
+img.index-img {
+  margin-top: -5%;
+  border-radius: 25%;
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
   text-decoration: none;
+  font-size: 30px;
+}
+
+a:hover {
+  color: #792733;
 }
 
 li {
@@ -18,3 +34,49 @@ li {
   font-size: 20px;
   display: inline;
 }
+
+.bonus {
+  text-align: center;
+  font-size: 15px;
+}
+
+div.table {
+  text-align: center;
+  margin-left: 45%;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(122, 149, 179, 0.5);
+  text-align: center;
+}
+
+form.score-one {
+  display: block;
+  text-align: center;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 4em;
+  width: 25em;
+  font-size: 15px;
+  color: #792733;
+  margin-top: 1%;
+}
+
+input[type="submit"] {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 1%;
+}
+
+.word {
+  letter-spacing: 5px;
+}
+
+.scored-word {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5%;
+}
+

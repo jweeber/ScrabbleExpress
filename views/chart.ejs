@@ -8,19 +8,21 @@
     <header>
       <h1>Scrabble Scoring Chart!</h1>
     </header>
-    <table>
-      <th>LETTER</th>
-      <th>POINTS</th>
-      <tr><% for (var letter of letters) { %> 
-      <td><%= letter %> </td></tr>
-      <% } %>
-      <tr>
-      <% for (var letter in scoring) { %>
-      <td><%= scoring[letter] %></td></tr>
+    <p class="bonus ">BONUS FOR 7-LETTER WORDS: <%= bonus %> POINTS</p>
+    <div class="table">
+      <table>
+        <tr>
+        <th class="points">LETTER</th>
+        <th class="points">POINTS</th>
+        </tr>
 
-      <% } %>
-    </table>
-    <%= bonus %>
- 
+       <tr> <% for (var i=0; i < letters.length; i++) { %>
+          
+            <td class="points"><%= letters[i] %></td>
+            <td class="points"><%= scoring[letters[i]] %></td>
+          </tr>
+        <% } %>
+      </table>
+    </div>
   </body>
 </html>
